@@ -13,10 +13,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="home.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
-        <li><a href="gaming.html">Gaming</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="tournaments.html">Tournaments</a></li>
-        <li><a href="findus.html">Find Us</a></li>
+        <li><a href="gaming.html">Tournaments</a></li>
+        <li><a href="events.html">Find Us</a></li>
+        <% if current_user %>
+          <li><%= link_to "Log Out", session_path("current"), method: :delete %></li>
+        <% end %>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

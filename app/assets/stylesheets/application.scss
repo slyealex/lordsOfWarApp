@@ -7,3 +7,83 @@
 body {
   margin-top: 100px;
 }
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin-top: 50px;
+  background-color: rgb(140, 140, 140);
+}
+
+a:hover {
+  border-bottom: 4px solid rgb(154, 48, 48);
+}
+
+.custom-header {
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  border-top: 5px solid rgb(154, 48, 48);
+  border-left: 5px solid rgb(154, 48, 48);
+  box-shadow: 5px 5px 0px black;
+  margin: 20px 0 25px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+.custom-footer {
+  background-color: rgb(212, 212, 212);
+  padding-top: 10px;
+  border-top: 4px solid rgb(154, 48, 48);
+  margin-top: 20px;
+
+}
+
+/* HOME PAGE */
+
+.custom-panel {
+  background-color: rgb(212, 212, 212);
+  box-shadow: 5px 5px 0px black;
+  margin: 20px;
+
+}
+
+
+
+/* PRODUCTS PAGE */
+
+.img-custom {
+  height: 350px;
+  max-width: 100%;
+}
+
+.custom-box {
+  background-color: rgb(224, 221, 221);
+  border-radius: 2%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 0px black;
+}
+
+/* GAMING PAGE */
+
+.day-box {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background-color: rgb(212, 212, 212);
+  float: left;
+  box-shadow: 5px 5px 0px black;
+}
+
+.week-day {
+  text-align: center;
+  background-color: rgb(154, 48, 48);
+  color: rgb(212, 212, 212);
+}
+
+.box-content {
+  padding: 5px;
+}

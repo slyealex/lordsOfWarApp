@@ -21,20 +21,37 @@
           </div>
 
           <!-- List group -->
-          <ul class="list-group">
+          <!-- <ul class="list-group">
             <li class="list-group-item">Warhammer Quest will be on sale in our store soon! Let us know if you want one before they are gone!</li>
             <li class="list-group-item">We now Carry Frostgrave By Osprey Games!</li>
             <li class="list-group-item">We will also be carrying Team Yankee by Battlefront Miniatures!</li>
             <li class="list-group-item">Something new this year, there will be a full schedule of this years Lords Of War Tournaments Released soon.</li>
             <li class="list-group-item">Stay tuned for more! Check out Lordsofwartournament.com or the event Facebook page</li>
-          </ul>
+          </ul> -->
+
+
+
         </div>
+        <% @contents.each do |content| %>
+          <div class="panel custom-panel col-md-5">
+            <div class="panel-heading">
+              <h1><%= content.title %></h1>
+            </div>
+          </div>
+        <% end %>
+
+        <div class="panel custom-panel col-md-5">
+          <div class="btn btn-default">
+            <%= link_to "Add Content", new_content_path %>
+          </div>
+        </div>
+
 
       </div>
 
 
       <% if current_user %>
-        <h1>Hidden text</h1>
+        <h1>Admin Text</h1>
       <% end %>
 
 

@@ -1,2 +1,28 @@
-<h1>Contents#new</h1>
-<p>Find me in app/views/contents/new.html.erb</p>
+<div class="container">
+
+    <h1 class="custom-header">Add Content</h1>
+
+    <%= form_for @content do |f| %>
+      <div class="panel custom-panel">
+        <div class="panel-heading">
+          <h1><%= f.label :title %></h1>
+          <h1><%= f.text_field :title %></h1>
+        </div>
+
+        <div class="panel-body">
+          <h1><%= f.label :content %></h1>
+          <%= f.text_area :content, class: "col-md-12 custom-text-area" %>
+        </div>
+
+        <div class="panel-heading">
+          <h1><%= f.label :url %></h1>
+          <%= f.text_field :url %>
+        </div>
+
+        <div class="panel-body">
+          <%= f.submit "Submit", class: "btn btn-default" %>
+        </div>
+      </div>
+    <% end %>
+
+</div>

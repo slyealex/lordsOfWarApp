@@ -40,12 +40,13 @@
           </div>
         <% end %>
 
-        <div class="panel custom-panel col-md-5">
-          <div class="btn btn-default">
-            <%= link_to "Add Content", new_content_path %>
+        <% if current_user %>
+          <div class="panel custom-panel col-md-5">
+            <div class="btn btn-default">
+              <%= link_to "Add Content", new_content_path %>
+            </div>
           </div>
-        </div>
-
+        <% end %>
 
       </div>
 

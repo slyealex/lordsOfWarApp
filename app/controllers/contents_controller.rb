@@ -5,8 +5,9 @@ class ContentsController < ApplicationController
 
   def create
     @content = Content.new(content_params)
+    @content.user = current_user
 
-    if @content.save
+    if @content.save!
       redirect_to root_path
     else
       render :new

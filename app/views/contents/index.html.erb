@@ -3,14 +3,14 @@
 
 
 
-
 <div class="container">
 
       <h1 class="custom-header"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>  We are Oakville's premier hobby destination!</h1>
 
       <div class="row">
 
-        <div class="panel custom-panel col-md-6">
+        <!-- STORE INFO -->
+        <div class="panel custom-panel col-md-10">
           <div class="panel-heading">
             <h1 class="week-day">Store Info</h1>
           </div>
@@ -21,47 +21,37 @@
           </div>
         </div>
 
-        <div class="panel custom-panel col-md-5">
-          <div class="panel-heading">
-            <h1 class="week-day">News</h1>
-          </div>
-
-          <!-- List group -->
-          <!-- <ul class="list-group">
-            <li class="list-group-item">Warhammer Quest will be on sale in our store soon! Let us know if you want one before they are gone!</li>
-            <li class="list-group-item">We now Carry Frostgrave By Osprey Games!</li>
-            <li class="list-group-item">We will also be carrying Team Yankee by Battlefront Miniatures!</li>
-            <li class="list-group-item">Something new this year, there will be a full schedule of this years Lords Of War Tournaments Released soon.</li>
-            <li class="list-group-item">Stay tuned for more! Check out Lordsofwartournament.com or the event Facebook page</li>
-          </ul> -->
 
 
-
-
-        <% @contents.each do |content| %>
-          <div class="panel custom-panel col-md-10">
-            <div class="panel-heading">
-              <h1 class="week-day"><%= content.title %></h1>
-            </div>
-            <div class="panel-body">
-              <%= content.content %>
-            </div>
-          </div>
-        <% end %>
-
-
-
+    <!-- NEWS FEED -->
+    <div class="panel custom-panel col-md-10">
+      <div class="panel-heading">
+        <h1 class="week-day">News Feed</h1>
       </div>
-    </div>
+    <% @contents.each do |content| %>
+      <div class="panel custom-panel-content col-md-12">
+        <div class="panel-heading">
+          <h1 class="week-day"><%= content.title %></h1>
+        </div>
+        <div class="panel-body">
+          <%= content.content %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
+
+
+
+    <!-- ADMIN PANEL -->
     <% if current_user %>
-      <div class="admin-panel">
+      <div class="admin-panel col-md-6">
           <h1>AdminPanel</h1>
           <%= link_to "Add Content", new_content_path, class: "btn btn-default btn-primary" %>
       </div>
     <% end %>
 
 
+  </div> <!-- end of row -->
 
-
-    </div>
+</div>

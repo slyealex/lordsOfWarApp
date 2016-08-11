@@ -11,8 +11,8 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li class="active"><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Products", products_path %></li>
         <li><a href="gaming.html">Tournaments</a></li>
         <li><a href="events.html">Find Us</a></li>
         <% if current_user %>

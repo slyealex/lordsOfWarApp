@@ -6,6 +6,7 @@
 
 body {
   margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 img {
@@ -17,8 +18,14 @@ body {
   background-color: rgb(140, 140, 140);
 }
 
+.jumbotron {
+  padding: 0;
+}
+
 a:hover {
   border-bottom: 4px solid rgb(154, 48, 48);
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .custom-header {

@@ -22,6 +22,12 @@ class ContentsController < ApplicationController
     @contents = Content.all
   end
 
+  def destroy
+    @content = Content.find(params[:id])
+    @content.destroy
+    redirect_to contents_path, notice: "content deleted successfully"
+  end
+
   private
 
   def content_params

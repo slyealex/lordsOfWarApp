@@ -36,7 +36,10 @@
         <div class="panel-body">
           <%= content.content %>
         </div>
+        <%= image_tag content.image %>
+        <%= link_to "Closer Look", content_path(content) %>
       </div>
+
     <% end %>
   </div>
 

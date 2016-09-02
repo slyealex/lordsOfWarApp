@@ -1,24 +1,19 @@
-# README
+# Lords of War Web App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For those interested in contributing, please clone the repo and run bundle install -> rake db:migrate -> rails s
 
-Things you may want to cover:
+This site is for Lords of War Games and Hobbies. It is designed to be a CMS for the store owners. The owners can sign in as an admin and add content to their news feed/products page and also add tournaments or events.
 
-* Ruby version
+These are the dynamic pages:
 
-* System dependencies
+* Content page
 
-* Configuration
+* Products page
 
-* Database creation
+* Tournaments page
 
-* Database initialization
+Among those are some static pages used for geolocation of the store. This site is currently a work in progress.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Site by Alex Slye
+- slyealex@live.com
+- slyenet.com

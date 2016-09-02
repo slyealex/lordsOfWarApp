@@ -2,6 +2,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "contents";
+@import "products";
 
 
 body {
@@ -31,6 +32,10 @@ nav a:hover {
   border-bottom: 4px solid rgb(154, 48, 48);
   font-size: 14px;
   font-weight: bolder;
+}
+
+.closer-look {
+  text-align: center;
 }
 
 .custom-header {
@@ -63,9 +68,7 @@ nav a:hover {
 
 }
 
-.custom-content {
-  background-color: #fff;
-}
+
 
 
 

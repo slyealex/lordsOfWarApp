@@ -18,6 +18,7 @@
           <div class="panel-body">
             <p>Come check out our awesome selection of Age Of Sigmar, Warhammer 40k, Dropzone Commander, Flames of War, Infinity, Malifaux, Batman Miniatures Game, Frostgrave, Team Yankee, Board Games, Magic: The Gathering and tons of essential hobby supplies. You're going to want to come out for gaming nights and events when you see the awesome terrain on our tables in store!</p>
             <p>As our customer, you will receive the BEST customer service. Our operators/owners have a combined work experience in hobby stores of 12 years, and over 35 years of combined hobby experience! We offer free help to our customers with building, painting and learning all of our games.</p>
+            <h3><%= link_to "Check us out on Facebook!", "https://www.facebook.com/lordsofwargamesandhobbies/?fref=ts" %></h3>
           </div>
         </div>
 
@@ -28,16 +29,16 @@
       <div class="panel-heading">
         <h1 class="week-day">News Feed</h1>
       </div>
-    <% @contents.each do |content| %>
-      <div class="panel custom-panel col-md-12">
+    <% @contents.reverse_each do |content| %>
+      <div class="custom-content">
         <div class="panel-heading">
-          <h1 class=""><%= content.title %></h1>
+          <h1 class="content-header"><%= content.title %></h1>
         </div>
         <%= image_tag content.image, class: "custom-image" %>
         <div class="panel-body custom-content">
-          <%= content.content %>
+          <p><%= content.content %></p>
         </div>
-        <%= link_to "Closer Look", content_path(content) %>
+        <h3 class="closer-look"><%= link_to "Closer Look", content_path(content) %></h3>
       </div>
 
     <% end %>

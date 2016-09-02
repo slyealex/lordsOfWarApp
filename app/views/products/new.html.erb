@@ -1,2 +1,33 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<div class="container">
+  <div class="row">
+    <h1 class="custom-header">Add Product</h1>
+
+    <%= form_for @product do |f| %>
+      <div class="panel custom-panel">
+        <div class="panel-heading">
+          <h1><%= f.label :name %></h1>
+          <h1><%= f.text_field :name %></h1>
+        </div>
+
+        <div class="panel-body">
+          <h1><%= f.label :picture %></h1>
+          <%= f.file_field :picture %>
+        </div>
+
+        <div class="panel-heading">
+          <h1><%= f.label :info %></h1>
+          <%= f.text_area :info, class: "col-md-12 custom-text-area" %>
+        </div>
+
+        <div class="panel-heading">
+          <h1><%= f.label :website %></h1>
+          <%= f.text_field :website %>
+        </div>
+
+        <div class="panel-body">
+          <%= f.submit "Submit" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

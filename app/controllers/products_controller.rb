@@ -3,6 +3,10 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
   def index
     @product = Product.all
   end
@@ -25,6 +29,10 @@ class ProductsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def delete
+    @product = Product.delete
   end
 
   private

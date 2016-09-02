@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resources :contents
   resources :sessions
   resources :products
+  resources :pages
+
+
 
 
 

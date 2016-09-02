@@ -8,6 +8,10 @@
 
   <h3><%= link_to "Website", @product.website %></h3>
 
+  <% if current_user %>
+    <%= link_to "Delete Product", product_path(@product), method: :delete, data: {confirm: "Are you sure?"} %>
+  <% end %>
+
 
   <br>
   <br>

@@ -31,8 +31,10 @@ class ProductsController < ApplicationController
     end
   end
 
-  def delete
-    @product = Product.delete
+  def destroy
+    @product = Product.find(params[:id])
+    @product.delete
+    redirect_to products_path, notice: "successfully removed product"
   end
 
   private

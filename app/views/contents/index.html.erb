@@ -29,14 +29,14 @@
         <h1 class="week-day">News Feed</h1>
       </div>
     <% @contents.each do |content| %>
-      <div class="panel custom-panel-content col-md-12">
+      <div class="panel custom-panel col-md-12">
         <div class="panel-heading">
-          <h1 class="week-day"><%= content.title %></h1>
+          <h1 class=""><%= content.title %></h1>
         </div>
-        <div class="panel-body">
+        <%= image_tag content.image, class: "custom-image" %>
+        <div class="panel-body custom-content">
           <%= content.content %>
         </div>
-        <%= image_tag content.image %>
         <%= link_to "Closer Look", content_path(content) %>
       </div>
 

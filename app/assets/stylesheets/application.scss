@@ -13,6 +13,10 @@ img {
   max-width: 100%;
 }
 
+img .custom-image {
+  width: auto;
+}
+
 body {
   margin-top: 50px;
   background-color: rgb(140, 140, 140);
@@ -56,6 +60,10 @@ nav a:hover {
   box-shadow: 5px 5px 0px black;
   margin: 20px;
 
+}
+
+.custom-content {
+  background-color: #fff;
 }
 
 

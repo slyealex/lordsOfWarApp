@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to "Home", root_path %></li>
         <li><%= link_to "Products", products_path %></li>
-        <li><a href="gaming.html">Tournaments</a></li>
+        <li><%= link_to "Tournaments", tournaments_path %></li>
         <li><%= link_to "Find Us", pages_path %></li>
         <% if current_user %>
           <li><%= link_to "Log Out", session_path("current"), method: :delete %></li>

@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :products
   resources :pages
 
+  get '/tournaments' => 'pages#tournaments'
+
 
 
 

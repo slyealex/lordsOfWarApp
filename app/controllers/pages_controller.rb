@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def index
     # Static page for store location
   end
+
+  def tournaments
+
+  end
 end
